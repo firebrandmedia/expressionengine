@@ -1,5 +1,6 @@
 {blog_content} 
   {assets} {files} <img src="{url}" /> {/files} {/assets} 
+  {heading}{value}{/heading}
   {wygwam} {value} {/wygwam} 
   {wysiwyg} {value} {/wysiwyg} 
   {rich_text}{value}{/rich_text}
