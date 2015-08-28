@@ -2,6 +2,7 @@
   {assets} {files} <img src="{url}" /> {/files} {/assets} 
   {wygwam} {value} {/wygwam} 
   {wysiwyg} {value} {/wysiwyg} 
+  {rich_text}{value}{/rich_text}
   {code} {value} {/code} 
 {/blog_content}
 
