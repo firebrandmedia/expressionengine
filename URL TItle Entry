@@ -1,0 +1,6 @@
+{exp:channel:entries channel="misc_content" url_title="about-me" dynamic="off" limit="1" disable="member_data|pagination"} 
+<img src="{image_field" alt=""> 
+{title}
+<p>{body}</p> 
+{/exp:channel:entries}
+
