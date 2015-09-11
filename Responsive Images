@@ -1,0 +1,14 @@
+Responsive image solution using CE Image and Srcset. The images are in a Matrix field, thus the opening and closing {blog_iamge} tags.
+
+<!--Current-->
+{blog_image}
+    {exp:ce_img:pair src="{blog_featured_image}" width="1500"}<img class="{blog_image_alignment}" src="{made}" />{/exp:ce_img:pair}
+{/blog_image}
+
+<!--Responsive-->
+
+{blog_image}
+<img class="{blog_image_alignment}" 
+  src="{exp:ce_img:single src='{blog_featured_image}' width='640' output='{made}'}" 
+  srcset="{exp:ce_img:single src='{blog_featured_image}' width='640' output='{made}'} 640w, {exp:ce_img:single src='{blog_featured_image}' width='1200' output='{made}' allow_scale_larger="yes"} 1200w, {exp:ce_img:single src='{blog_featured_image}' width='2000' output='{made}' allow_scale_larger="yes"} 2000w" sizes="100vw" alt="{title} Picture">
+{/blog_image}
