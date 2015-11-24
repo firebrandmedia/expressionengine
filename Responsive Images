@@ -1,4 +1,4 @@
-Responsive image solution using CE Image and Srcset. The images are in a Matrix field, thus the opening and closing {blog_iamge} tags.
+Responsive image solution using CE Image and Srcset. The images are in a Matrix field, thus the opening and closing {blog_image} tags.
 
 <!--Current-->
 {blog_image}
