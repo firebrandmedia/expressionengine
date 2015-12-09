@@ -1,0 +1,23 @@
+Twitter Cards:
+https://dev.twitter.com/cards/overview
+
+Twitter Card Validator:
+https://cards-dev.twitter.com/validator
+
+Using Content Elements and CE Image 
+{exp:channel:entries channel="books" sort="asc" limit="15" disable="member_data|pagination"} <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content="@username"> <meta name="twitter:creator" content="@username"> <meta name="twitter:title" content="An Excerpt from {title} a Finch's Crossing Series Book"> {book_content}{gallery}{images limit="1"}{exp:ce_img:pair src="{image}"}<meta name="twitter:image:src" content="{site_url}{made}">{/exp:ce_img:pair}{/images}{/gallery} {rich_text strip_tags="yes"} <meta name="twitter:description" content="{value}">{/rich_text}{/book_content} {/exp:channel:entries}
+
+Open Graph / Facebook tags:
+http://ogp.me/
+
+Using Content Elements and CE Image 
+{exp:channel:entries channel="books" sort="asc" limit="15" disable="member_data|pagination"} <meta property="og:title" content="{title} a Finch's Crossing Series Book" /> <meta property="og:site_name" content="{site_name}" /> <meta property="og:url" content="{title_permalink='books/excerpt'}" /> {book_content}{gallery}{images limit="1"}{exp:ce_img:pair src="{image}"}<meta property="og:image" content="{site_url}{made}"/>{/exp:ce_img:pair}{/images}{/gallery} {rich_text strip_tags="yes" char_limit="300"} <meta property="og:description" content="{value}" />{/rich_text}{/book_content} <meta property="og:type" content="article" /> <meta property="article:author" content="https://www.facebook.com/katheranallen" /> {/exp:channel:entries}
+
+Facebook Debugger:
+https://developers.facebook.com/tools/debug/
+
+Facebook Sharing Best Practices:
+https://developers.facebook.com/docs/sharing/best-practices#tags
+
+Schema.org / Schema Creator
+http://schema-creator.org/
