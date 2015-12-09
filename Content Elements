@@ -1,3 +1,5 @@
+Content Elemets field that includes the use of Assets (as opposed to the standard file upload field.
+
 {blog_content} 
   {assets} {files} <img src="{url}" /> {/files} {/assets} 
   {heading}{value}{/heading}
