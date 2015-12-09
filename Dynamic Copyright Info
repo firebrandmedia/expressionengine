@@ -1,0 +1,6 @@
+Copyright with first year and current year:
+
+&copy; Copyright {if {current_time format="%Y"} != "2015"}2015 - {/if} {current_time format="%Y"}
+
+Copyright with current year only:
+&copy; {current_time format="%Y"}
