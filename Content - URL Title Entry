@@ -1,0 +1,8 @@
+Entry based on a URL Title, ie. About Page, Contact Page, Privacy Policy Page.
+
+{exp:channel:entries channel="misc_content" url_title="about-me" dynamic="off" limit="1" disable="member_data|pagination"} 
+  <img src="{image_field" alt=""> 
+  <h1>{title}</h1>
+  <p>{body}</p> 
+{/exp:channel:entries}
+
