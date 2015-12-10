@@ -1,0 +1,12 @@
+Author details for blog entries.
+
+<div id="author-details" class="author_details">
+  <h4>About The Author</h4>
+  {if photo}<img class="author_image" src="{photo_url}" width="{photo_image_width}" height="{photo_image_height}" alt="{author}'s photo" />{/if}
+  {if avatar}<img class="author_image" src="{avatar_url}" width="{avatar_image_width}" height="{avatar_image_height}" alt="{author}'s avatar" />{/if}
+  <ul>
+    <li>{author}</li>
+    <li><strong>About Me:</strong> {bio}</li>
+    {if url}<li><strong>@</strong><a href="{url}" title="Visit {author}'s website.">gbradhopkins</a></li>{/if}
+  </ul>
+</div>
