@@ -1,0 +1,10 @@
+Information related to blog entry.
+
+<ul>
+    {if logged_in}<li><a href="{cp_edit_entry_url}" target="_blank"><i class="icon-edit"></i></a></li>{/if}
+    <li><strong>Written by</strong> <a href="#author-details">{author}</a></li>
+    <li class="date"><strong>on</strong> {entry_date format="%m/%d/%Y"}</li>
+    <li><strong>in category</strong> {categories}<a href="{path='blog/category/'}">{category_name}, </a> {/categories}</li>
+    <li class="viewed"><strong>Viewed:</strong> {view_count_one} time(s)</li>
+    <li class="share"><strong>Share:</strong> {if blog_short}{blog_short}{if:else} {blog_shortcut}{/if}</li>
+</ul>
