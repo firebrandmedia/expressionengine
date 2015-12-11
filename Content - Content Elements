@@ -6,6 +6,8 @@ Content Elemets field that includes the use of Assets (as opposed to the standar
   {wygwam} {value} {/wygwam} 
   {wysiwyg} {value} {/wysiwyg} 
   {rich_text}{value}{/rich_text}
+  {text_field}{value}{/text_field}
+  {textarea}<p>{value}</p>{/textarea}
   {code} {value} {/code} 
 {/blog_content}
 
