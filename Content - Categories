@@ -25,3 +25,5 @@ Categories with a list of entries and a custom field displayed
                     </ul>
                 {/categories}
               {/exp:channel:category_archive}
+              
+  Reference Source: http://expressionengine.stackexchange.com/questions/30111/how-do-i-display-entries-by-category/30152#30152
