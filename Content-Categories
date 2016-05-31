@@ -1,0 +1,27 @@
+Categories with a list of entries
+
+                {exp:channel:category_archive channel="portfolio" style="linear" orderby="date" sort="desc"}
+                    {categories}
+                        <h3>{category_name} <i class="{category_url_title}"></i></h3>
+                        {if category_description}
+                            <p>{category_description}</p>
+                        {/if}
+                    {/categories}
+                    <ul>{entry_titles}
+                        <li><span class="project-date">{entry_date format="%m.%Y"} </span><a href="{path='SITE_INDEX'}">{title}</a> {if portfolio_quotes}<i class="icon-comment"></i>{/if}</li>
+                    {/entry_titles}
+                    </ul>
+                {/exp:channel:category_archive}
+                
+Categories with a list of entries and a custom field displayed
+                
+                {exp:channel:category_archive channel="portfolio" style="linear"}
+                {categories}
+                    <h3>{category_name} <i class="{category_url_title}"></i></h3>
+                    <ul>
+                        {exp:channel:entries channel="portfolio" category="{category_id}" disable="member_data|pagination"}
+                        <li><span class="project-date">{entry_date format="%m.%Y"} </span><a href="{path='SITE_INDEX'}">{title}</a> {if portfolio_quotes}<i class="icon-comment"></i>{/if}</li>
+                        {/exp:channel:entries}
+                    </ul>
+                {/categories}
+              {/exp:channel:category_archive}
