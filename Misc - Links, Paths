@@ -1,0 +1,14 @@
+Site Index:
+{path='site_index'}
+
+Path:
+{path='channel/archives'}
+
+Entry Date:
+{entry_date format="%m/%d/%Y"}
+
+Orderby:
+orderby="comment_total" orderby="date" orderby="edit_date" orderby="entry_id" orderby="expiration_date" orderby="most_recent_comment" orderby="random" orderby="screen_name" orderby="status" orderby="title" orderby="url_title" orderby="username" orderby="view_count_one" orderby="view_count_two" orderby="view_count_three" orderby="view_count_four"
+
+Blog Entry:
+<a href="{title_permalink='blog/article'}" title="Read {title}">{title}</a>
