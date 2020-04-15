@@ -1,0 +1,10 @@
+Add this to the footer to quickly check for any crazy performance issues.
+
+{if logged_in_group_id == "1"}
+      <ul class="stats">
+          <li>EE {app_version} Build {app_build}</li>
+          <li>{total_queries} Total Queries</li>
+          <li>{memory_usage} of Memory</li>
+          <li>{elapsed_time} Seconds to Load</li>
+      </ul>
+  {/if}
